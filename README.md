@@ -16,7 +16,7 @@ The atlas is referenced in standard [MNI] (_Montreal Neurological Institute_) sp
 The developed multi-scale atlas is presented in four different files stored in **Hierarchical Data Format** ([HDF5] files with _**.h5**_ extension). Each file contains the probabilistic connectome atlas for each of the four scales. Each of these [HDF5] files contains the same groups and datasets. The main difference among them is the amount of data stored because it proportionally depends on the number of gray matter (_GM_) regions included in each parcellation scale. Each [HDF5] file contains three different groups of datasets: 1) **header**, 2) **matrices** and 3) **atlas**.
 
 Inside the **header** group, the number of subjects employed to build the atlas and the required data to pass from the [HDF5] format to [Nifti-1] file format is contained in different datasets. This group also contains scale-specific information about the gray matter regions employed to separate the bundles.
-These files can be downloaded from http://10.5281/zenodo.4919132.
+These files can be downloaded from https://doi.org/10.5281/zenodo.4919131.
 
 | Group/Dataset | Description |
 | ------ | ------ |
@@ -233,7 +233,7 @@ To be decided
 
 
    [HDF5]: <https://www.hdfgroup.org/solutions/hdf5/>
-   [http://10.5281/zenodo.4919132]: <http://10.5281/zenodo.4919132>
+   [https://doi.org/10.5281/zenodo.4919131]: <https://doi.org/10.5281/zenodo.4919131>
    [Nifti-1]: <https://www.nitrc.org/docman/view.php/26/204/TheNIfTI1Format2004.pdf>
    [HCP]: <https://www.humanconnectome.org>
    [HCP website]: <https://db.humanconnectome.org/>
