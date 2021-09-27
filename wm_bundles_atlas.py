@@ -316,7 +316,7 @@ def bundles_from_mask(hfName, maskFilename, outBasename, scaleId, mapFilename, v
 
             # Saving the bundle image
             if boolbund:
-                bundFilename   = os.path.join(outDir, fname + "-fromMask-" + bundIds[i] + "-" + scaleId + ".nii.gz")
+                bundFilename   = os.path.join(outDir, fname + "-fromMask-" + tempS + "-" + scaleId + ".nii.gz")
                 array_img      = nib.Nifti1Image(array_data, affine)
                 nib.save(array_img, bundFilename)
 
