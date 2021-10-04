@@ -328,8 +328,8 @@ def bundles_from_mask(hfName, maskFilename, outBasename, scaleId, mapFilename, v
                 mVal    = np.mean(dataM[array_data >= voxth])
                 sVal    = np.std(dataM[array_data >= voxth])
                 dVal    = np.median(dataM[array_data >= voxth])
-                sourROI = stnames[int(X[i])].decode('UTF-8')
-                targROI = stnames[int(Y[i])].decode('UTF-8')
+                sourROI = stnames[int(X[i])-1].decode('UTF-8')
+                targROI = stnames[int(Y[i])-1].decode('UTF-8')
                 cVal    = consistM[X[i]-1, Y[i]-1]*100
                 tabList.append([tempS, sourROI, targROI, cVal, mVal, sVal, dVal])
 
