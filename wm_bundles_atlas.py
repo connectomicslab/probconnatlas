@@ -649,12 +649,12 @@ def bundles_to_connectivity(hfName, outBasename, scaleId, mapFilename, voxth=0, 
 
             # stdMat[int(roiIds[0]) - 1, int(roiIds[1]) - 1] = np.std(dataM[array_data >= voxth])
             # stdMat[int(roiIds[1]) - 1, int(roiIds[0]) - 1] = stdMat[int(roiIds[0]) - 1, int(roiIds[1]) - 1]
-            stdMat[int(X[i]) - 1, int(Y[i]) - 1] = np.mean(dataM[array_data >= voxth])
+            stdMat[int(X[i]) - 1, int(Y[i]) - 1] = np.std(dataM[array_data >= voxth])
             stdMat[int(Y[i]) - 1, int(X[i]) - 1] = stdMat[int(X[i]) - 1, int(Y[i]) - 1]
 
             # medMat[int(roiIds[0]) - 1, int(roiIds[1]) - 1] = np.median(dataM[array_data >= voxth])
             # medMat[int(roiIds[1]) - 1, int(roiIds[0]) - 1] = medMat[int(roiIds[0]) - 1, int(roiIds[1]) - 1]
-            medMat[int(X[i]) - 1, int(Y[i]) - 1] = np.mean(dataM[array_data >= voxth])
+            medMat[int(X[i]) - 1, int(Y[i]) - 1] = np.median(dataM[array_data >= voxth])
             medMat[int(Y[i]) - 1, int(X[i]) - 1] = medMat[int(X[i]) - 1, int(Y[i]) - 1]
 
         printProgressBar(i+1, tbund, 'Processing bundle: ' + '(' + str(i+1) + '/' + str(tbund) + ')')
