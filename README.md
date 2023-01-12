@@ -229,7 +229,7 @@ If the options `--extract` or `-e` are specified, the individual bundles in Nift
 
 ## License
 
-To be decided
+Apache License, Version 2.0
 
 
    [HDF5]: <https://www.hdfgroup.org/solutions/hdf5/>
