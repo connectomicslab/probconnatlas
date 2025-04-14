@@ -447,9 +447,9 @@ def bundles_from_mask(
                 # tempS = bundIds[i]
                 # roiIds = tempS.split('_')
 
-                mVal = np.mean(dataM[array_data >= voxth])
-                sVal = np.std(dataM[array_data >= voxth])
-                dVal = np.median(dataM[array_data >= voxth])
+                mVal = np.mean(dataM[array_data != 0])
+                sVal = np.std(dataM[array_data != 0])
+                dVal = np.median(dataM[array_data != 0])
                 sourROI = stnames[int(X[i]) - 1].decode("UTF-8")
                 targROI = stnames[int(Y[i]) - 1].decode("UTF-8")
                 cVal = consistM[X[i] - 1, Y[i] - 1] * 100
@@ -651,9 +651,9 @@ def bundles_from_textfile(
 
                 # Creating the table
                 if booltab:
-                    mVal = np.mean(dataM[array_data >= voxth])
-                    sVal = np.std(dataM[array_data >= voxth])
-                    dVal = np.median(dataM[array_data >= voxth])
+                    mVal = np.mean(dataM[array_data != 0])
+                    sVal = np.std(dataM[array_data != 0])
+                    dVal = np.median(dataM[array_data != 0])
                     sourROI = stnames[bundIds[i, 0] - 1].decode("UTF-8")
                     targROI = stnames[bundIds[i, 1] - 1].decode("UTF-8")
                     cVal = consistM[bundIds[i, 0] - 1, bundIds[i, 1] - 1] * 100
